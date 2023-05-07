@@ -5,14 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  
     <title>Document</title>
+    <style>
+      * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .signup {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup p {
+    font-size: 14px;
+  }
+  
+  .signup a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+    </style>
   </head>
   <body  style=" background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgICAgIBwcHBwcHCAoHBwcHBw8ICQcKFREWIiARHxMYHSggGBolGx8VITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDysZFRkrLSsrKys3KysrKysrKy0tKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAJ8BPgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EABgQAQEBAQEAAAAAAAAAAAAAAAABERIC/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAEDAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APV0kzdkiGAYVCBhghVCUVDDBGoBIhEMMBihIIJJAkkCFKAM1oUGQ1QDNZrQqKyzWhQZrNaoqDNBoqKKKRQAIQJgMUMIMAmCNRRNQQwQwxQxQxqCGASCITAYoUkCSIBEAkkABAAUgBWa0KisUVqs0GaK1WagKzWqKis0GigAaECYDAMMEMUahBUMaghghjUBijUMEIEgiIxFRFIEigCKAAgADRQAaoQZFNFFZopooM0GioM0U0VFZoNACghAlKKGFQgYYIYo1DBDBGjAVGoWY0BIIhhgIGEJQpLQSq1CAUgUUUhBUVAUUUigzRSKDNFNFQFZrVZqKKzWhQZDVCBIKhMEIFqAxQwwQiGNMwqNGMkGizKRGiygb1azpBrVrOrQa0DVoHQNWgggBZqtGiqhAACAApFQApoorNFNFQAIQJgiUahBgNQsxqKhhEMAwiECklCtBA6dZQNadY1aDa1nVojWrWdWg1o1nVop0BAQkASQAEUAKQgKKayKKKaKgAaARBAwwEGjGYVGmozDBGizGgKRUBRwGU1iwGUcWAEsWAksWAkcWAEcOAyjiAAgEzTRUBRVQAoqoqKqzTQASVBEECRCBLJUaIQjUaYaBqFkxRqNMStSg0sUIgxY3Dijni5dcWA5crHXBgOeLHRmgzgaZqAoqtFFAQQVFQoAGigKKQigEAFUgRBAwggiCoSCISCBIMAwyslRuUyuenQdZTPTl0uhHfpdOPS6Uduh05dLoHS+mbWOl0g1azaNAp1lIAqlUBQaKAFIAAgACEUJIEVEBIIKEFQwiEQkGASCokUARAJagC1agB1aCB1AgikARFBAhACkUADQABAAEVFVBoB//9k=);background-size: cover; background-repeat: no-repeat;">
     <div class="pb-16">
@@ -28,6 +96,9 @@
             <li>Portfolio</li>
             <li>Experience</li>
             <li>Contact</li>
+            <li><a href="login">Login</a></li>
+            <li><a href="register">Register</a></li>
+
           </ul>
         </div>
       </div>
@@ -85,7 +156,7 @@
             </div>
           </div>
         </div>
-        <img src="C:\Users\Admin\Downloads\NM\img2.jpeg" alt="kokila image" class="lg:max-h-96 rounded-4xl" style="width: 350px; height: 380px;" />
+        <img src="C:\Users\Admin\Downloads\NM\img1.jpg" alt="kokila image" class="lg:max-h-96 rounded-4xl" style="width: 350px; height: 380px;" />
       </div>
     </div>
   </body>

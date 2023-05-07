@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="login">
+    <form action="/login" method="post">
+    <input type="text" name="username" id="username"placeholder ="enter your email" required>
+    <input type="password" name="password" id="password" placeholder="enter ypor password" required>
+    <button type="submit">LOGIN</button>
+  </form>
+  </div>
+
+  <div class="register">
+    {{msg}}
+    <form action="/register" method="post">
+      <input type="text" name="firstname" id="firstname" placeholder="enter firstname" required>
+      <input type="text" name="lastname" id="lastname" placeholder="enter lastname" required>
+       <input type="email" name="email" id="email" placeholder="enter email" required>
+      <input type="password" name="password" id="password" placeholder="enter password" required>
+      <input type="password" name="confirmpassword" id="confirmpassword" placeholder="retype password" required>
+      <button type="submit">REGISTER</button>
+
+    </form>
+  </div>
+</body>
+</html>
